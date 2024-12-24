@@ -25,7 +25,7 @@ The latest release version is ```1.2.5``` and the current snapshot version is ``
 ...
 <dependencies>
     <dependency>
-        <groupId>org.eclipse.paho</groupId>
+        <groupId>cn.devicelinks.framework</groupId>
         <artifactId>org.eclipse.paho.client.mqttv3</artifactId>
         <version>%VERSION%</version>
     </dependency>

@@ -46,7 +46,7 @@ The latest release version is ```1.2.5``` and the current snapshot version is ``
 ...
 <dependencies>
     <dependency>
-        <groupId>org.eclipse.paho</groupId>
+        <groupId>cn.devicelinks.framework</groupId>
         <artifactId>org.eclipse.paho.client.mqttv3</artifactId>
         <version>%VERSION%</version>
     </dependency>
@@ -66,7 +66,7 @@ The latest release version is ```1.2.5``` and the current snapshot version is ``
 ...
 <dependencies>
     <dependency>
-        <groupId>org.eclipse.paho</groupId>
+        <groupId>cn.devicelinks.framework</groupId>
         <artifactId>org.eclipse.paho.mqttv5.client</artifactId>
         <version>%VERSION%</version>
     </dependency>
@@ -81,6 +81,8 @@ If you find that there is functionality missing or bugs in the release version, 
 There are two active branches on the Paho Java git repository, ```master``` which is used to produce stable releases, and ```develop``` where active development is carried out. By default cloning the git repository will download the ```master``` branch, to build from ```develop``` make sure you switch to the remote branch: ``` git checkout -b develop remotes/origin/develop ```
 
 To then build the library run the following maven command: ```mvn package -DskipTests```
+
+Publish to the "cn.devicelinks" central repository ```mvn clean deploy -DskipTests```
 
 This will build the client library without running the tests. The jars for the library, source and javadoc can be found in the following directories:
 ```
